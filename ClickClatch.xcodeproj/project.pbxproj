@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE42C3BC2A38B96B001EFECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42C3BB2A38B96B001EFECB /* AppDelegate.swift */; };
+		EE42C3BE2A38B96B001EFECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42C3BD2A38B96B001EFECB /* SceneDelegate.swift */; };
+		EE42C3C02A38B96B001EFECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42C3BF2A38B96B001EFECB /* ViewController.swift */; };
+		EE42C3C32A38B96B001EFECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE42C3C12A38B96B001EFECB /* Main.storyboard */; };
+		EE42C3C62A38B96B001EFECB /* ClickClatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE42C3C42A38B96B001EFECB /* ClickClatch.xcdatamodeld */; };
+		EE42C3C82A38B96C001EFECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE42C3C72A38B96C001EFECB /* Assets.xcassets */; };
+		EE42C3CB2A38B96C001EFECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE42C3C92A38B96C001EFECB /* LaunchScreen.storyboard */; };
+		EE557F512A3A01D10030FA4A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE557F502A3A01D10030FA4A /* SettingsViewController.swift */; };
+		EE557F532A3A01E20030FA4A /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE557F522A3A01E20030FA4A /* UploadViewController.swift */; };
+		EE6707D22A683F190019918E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE6707D12A683F190019918E /* GoogleService-Info.plist */; };
+		EE6707D32A6840730019918E /* Pods_ClickClatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E773485A9BCD30D19C69392 /* Pods_ClickClatch.framework */; };
+		EE6707D42A6840730019918E /* Pods_ClickClatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E773485A9BCD30D19C69392 /* Pods_ClickClatch.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE9360FB2A65D22B005C679E /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9360FA2A65D22B005C679E /* RankingViewController.swift */; };
+		EE9360FD2A65D25B005C679E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9360FC2A65D25B005C679E /* GameViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE6707D52A6840730019918E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE6707D42A6840730019918E /* Pods_ClickClatch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5AC3135DAADAFF0563FE9E5F /* Pods-ClickClatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickClatch.release.xcconfig"; path = "Target Support Files/Pods-ClickClatch/Pods-ClickClatch.release.xcconfig"; sourceTree = "<group>"; };
+		8E773485A9BCD30D19C69392 /* Pods_ClickClatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClickClatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7005537C3FCC8D42EDAFB9F /* Pods-ClickClatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClickClatch.debug.xcconfig"; path = "Target Support Files/Pods-ClickClatch/Pods-ClickClatch.debug.xcconfig"; sourceTree = "<group>"; };
+		EE42C3B82A38B96B001EFECB /* ClickClatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickClatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE42C3BB2A38B96B001EFECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE42C3BD2A38B96B001EFECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE42C3BF2A38B96B001EFECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE42C3C22A38B96B001EFECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE42C3C52A38B96B001EFECB /* InstaClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaClone.xcdatamodel; sourceTree = "<group>"; };
+		EE42C3C72A38B96C001EFECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE42C3CA2A38B96C001EFECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE42C3CC2A38B96C001EFECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE557F502A3A01D10030FA4A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EE557F522A3A01E20030FA4A /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		EE6707D12A683F190019918E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE9360FA2A65D22B005C679E /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		EE9360FC2A65D25B005C679E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE42C3B52A38B96B001EFECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6707D32A6840730019918E /* Pods_ClickClatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D241BD3902C8502182DF17E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7005537C3FCC8D42EDAFB9F /* Pods-ClickClatch.debug.xcconfig */,
+				5AC3135DAADAFF0563FE9E5F /* Pods-ClickClatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE42C3AF2A38B96B001EFECB = {
+			isa = PBXGroup;
+			children = (
+				EE42C3BA2A38B96B001EFECB /* ClickClatch */,
+				EE42C3B92A38B96B001EFECB /* Products */,
+				D241BD3902C8502182DF17E6 /* Pods */,
+				F8D9BA67A0C5D3C2535CB80A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE42C3B92A38B96B001EFECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE42C3B82A38B96B001EFECB /* ClickClatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE42C3BA2A38B96B001EFECB /* ClickClatch */ = {
+			isa = PBXGroup;
+			children = (
+				EE42C3BB2A38B96B001EFECB /* AppDelegate.swift */,
+				EE42C3BD2A38B96B001EFECB /* SceneDelegate.swift */,
+				EE42C3BF2A38B96B001EFECB /* ViewController.swift */,
+				EE42C3C12A38B96B001EFECB /* Main.storyboard */,
+				EE42C3C72A38B96C001EFECB /* Assets.xcassets */,
+				EE42C3C92A38B96C001EFECB /* LaunchScreen.storyboard */,
+				EE42C3CC2A38B96C001EFECB /* Info.plist */,
+				EE42C3C42A38B96B001EFECB /* ClickClatch.xcdatamodeld */,
+				EE557F502A3A01D10030FA4A /* SettingsViewController.swift */,
+				EE557F522A3A01E20030FA4A /* UploadViewController.swift */,
+				EE9360FA2A65D22B005C679E /* RankingViewController.swift */,
+				EE6707D12A683F190019918E /* GoogleService-Info.plist */,
+				EE9360FC2A65D25B005C679E /* GameViewController.swift */,
+			);
+			path = ClickClatch;
+			sourceTree = "<group>";
+		};
+		F8D9BA67A0C5D3C2535CB80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E773485A9BCD30D19C69392 /* Pods_ClickClatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE42C3B72A38B96B001EFECB /* ClickClatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE42C3CF2A38B96C001EFECB /* Build configuration list for PBXNativeTarget "ClickClatch" */;
+			buildPhases = (
+				21984113B270088BDD806C57 /* [CP] Check Pods Manifest.lock */,
+				EE42C3B42A38B96B001EFECB /* Sources */,
+				EE42C3B52A38B96B001EFECB /* Frameworks */,
+				EE42C3B62A38B96B001EFECB /* Resources */,
+				CE27FFEB70B42CA8B6914E19 /* [CP] Embed Pods Frameworks */,
+				EE6707D52A6840730019918E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClickClatch;
+			productName = InstaClone;
+			productReference = EE42C3B82A38B96B001EFECB /* ClickClatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE42C3B02A38B96B001EFECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EE42C3B72A38B96B001EFECB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = EE42C3B32A38B96B001EFECB /* Build configuration list for PBXProject "ClickClatch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE42C3AF2A38B96B001EFECB;
+			productRefGroup = EE42C3B92A38B96B001EFECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE42C3B72A38B96B001EFECB /* ClickClatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE42C3B62A38B96B001EFECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE42C3CB2A38B96C001EFECB /* LaunchScreen.storyboard in Resources */,
+				EE6707D22A683F190019918E /* GoogleService-Info.plist in Resources */,
+				EE42C3C82A38B96C001EFECB /* Assets.xcassets in Resources */,
+				EE42C3C32A38B96B001EFECB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21984113B270088BDD806C57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClickClatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE27FFEB70B42CA8B6914E19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClickClatch/Pods-ClickClatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClickClatch/Pods-ClickClatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClickClatch/Pods-ClickClatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE42C3B42A38B96B001EFECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE42C3C02A38B96B001EFECB /* ViewController.swift in Sources */,
+				EE557F532A3A01E20030FA4A /* UploadViewController.swift in Sources */,
+				EE42C3BC2A38B96B001EFECB /* AppDelegate.swift in Sources */,
+				EE9360FB2A65D22B005C679E /* RankingViewController.swift in Sources */,
+				EE9360FD2A65D25B005C679E /* GameViewController.swift in Sources */,
+				EE42C3BE2A38B96B001EFECB /* SceneDelegate.swift in Sources */,
+				EE557F512A3A01D10030FA4A /* SettingsViewController.swift in Sources */,
+				EE42C3C62A38B96B001EFECB /* ClickClatch.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE42C3C12A38B96B001EFECB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE42C3C22A38B96B001EFECB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE42C3C92A38B96C001EFECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE42C3CA2A38B96C001EFECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE42C3CD2A38B96C001EFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE42C3CE2A38B96C001EFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE42C3D02A38B96C001EFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7005537C3FCC8D42EDAFB9F /* Pods-ClickClatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TA7AZTCY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClickClatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "to get a photo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salihkocatu-rk.InstaClone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE42C3D12A38B96C001EFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC3135DAADAFF0563FE9E5F /* Pods-ClickClatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TA7AZTCY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClickClatch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "to get a photo";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salihkocatu-rk.InstaClone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE42C3B32A38B96B001EFECB /* Build configuration list for PBXProject "ClickClatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE42C3CD2A38B96C001EFECB /* Debug */,
+				EE42C3CE2A38B96C001EFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE42C3CF2A38B96C001EFECB /* Build configuration list for PBXNativeTarget "ClickClatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE42C3D02A38B96C001EFECB /* Debug */,
+				EE42C3D12A38B96C001EFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE42C3C42A38B96B001EFECB /* ClickClatch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE42C3C52A38B96B001EFECB /* InstaClone.xcdatamodel */,
+			);
+			currentVersion = EE42C3C52A38B96B001EFECB /* InstaClone.xcdatamodel */;
+			path = ClickClatch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE42C3B02A38B96B001EFECB /* Project object */;
+}
