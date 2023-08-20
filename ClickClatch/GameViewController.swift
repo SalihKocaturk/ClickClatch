@@ -13,9 +13,11 @@ import SDWebImage
 class Photos{
     var photoid = ""
     var postedby = ""
-    init(photoid: String = "", postedby: String = "") {
+    var place = 0
+    init(photoid: String = "", postedby: String = "", place: Int = 0) {
         self.photoid = photoid
         self.postedby = postedby
+        self.place = place
     }
     
 }
@@ -104,9 +106,10 @@ class GameViewController: UIViewController {
                         self.documentidarray.append(documentID)
                         var i = 0
                         
-                        if let postedBy = document.get("postedby") as? String, let imageUrl = document.get("imageurl") as? String{
-                            
-                            let phototos = Photos(photoid: imageUrl, postedby: postedBy)
+                        if let postedBy = document.get("postedby") as? String, let imageUrl = document.get("imageurl") as? String, let np = document.get("imagePlace") as? Int{
+                            print("abc")
+                            print(imageUrl)
+                            let phototos = Photos(photoid: imageUrl, postedby: postedBy,place: np)
                             self.photoArray.append(phototos)
                         
                             
@@ -115,9 +118,22 @@ class GameViewController: UIViewController {
                         }
                     }
                     if self.photoArray.count != 0{
-                        let a = self.photoArray.count - 1
+                        var i = 0
+                        var k = 1
+                        var theplacement = 0
+                        var a = Int(self.photoArray.count)
+                        
+                        for array in self.photoArray {
+                            if self.photoArray[i].place > k {
+                                k = self.photoArray[i].place
+                                theplacement = i
+                                i += 1
+                            }
+                            
+                        }
                         for image in self.imageArray {
-                            image.sd_setImage(with: URL(string: self.photoArray[a-1].photoid))
+                            
+                            image.sd_setImage(with: URL(string: self.photoArray[i].photoid))
                             
                         }
                     }else{

@@ -11,22 +11,66 @@ import FirebaseCore
 import FirebaseFirestore
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
-   
-    
-    
+   var npArray = [Int]()
+    var a = 0
+    var documentidarray = [String]()
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         imageView.isUserInteractionEnabled = true
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(savephoto))
         imageView.addGestureRecognizer(imageTapRecognizer)
        
     }
-    
+    func getTheA(){
+        let firestoredb = Firestore.firestore()
+        firestoredb.collection("uploadedPhoto").addSnapshotListener { snapshot, error in
+            if error != nil{
+                self.makealert(titleInput: "error", messageInput: error?.localizedDescription ?? "error")
+                
+            }else
+            {
+                if snapshot?.isEmpty == false{
+                    
+                    for document in snapshot!.documents{
+                        let documentID = document.documentID
+                        self.documentidarray.append(documentID)
+                        var i = 0
+                        var x = -1
+                        if let np = document.get("imagePlace") as? Int{
+                            print("np")
+                            print(np)
+                            self.npArray.append(np)
+                            for array in self.npArray {
+                                if self.npArray[i] > x{
+                                    x = self.npArray[i]
+                                    
+                                }
+                                
+                            }
+                            self.a = self.npArray.count + 1
+                            print(self.a)
+                            
+                            
+                          
+                        }else
+                        {
+                          
+                        }
+                    }
+                }
+            }
+            
+            
+            
+            
+        }
+    }
 
     @IBAction func saveButton(_ sender: Any) {
-        
+    
         let storage = Storage.storage()//depolama alanını tanımlıyoruz
         let storagereference = storage.reference()
         let mediaFolder = storagereference.child("media")//media kademesini referans alıyoruz
@@ -41,10 +85,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                 }else{
                     imagereference.downloadURL { (url, error) in//urlyi indiriyoruz
                         if error == nil{
+                            self.getTheA()
+                            print(self.a)
                             let imageUrl = url?.absoluteString//stringe çeviriyoruz
                             let firestoreDatabase = Firestore.firestore()//firstore databesee erişiyoruz
                             var firestorereferenc: DocumentReference? = nil//referans tanımlıyoruz
-                            let firestorepost = ["imageurl": imageUrl!,"postedby":Auth.auth().currentUser!.email] as [String : Any]//postun değerlerini giriyoruz
+                            let firestorepost = ["imageurl": imageUrl!,"postedby":Auth.auth().currentUser!.email,"imagePlace":self.a] as [String : Any]//postun değerlerini giriyoruz
+                            
                             firestorereferenc = firestoreDatabase.collection("uploadedPhoto").addDocument(data: firestorepost, completion: {(error) in//referansa değerleri koyuyoruz
                                 if error != nil{
                                     self.makealert(titleInput: "error", messageInput:error?.localizedDescription ?? "error" )
