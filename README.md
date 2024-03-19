@@ -15,8 +15,8 @@ This project is a game where you try to click on an image that you upload. The i
 - Firebase: Mobile and web application development platform that offers features such as real-time database, authentication, hosting, and analytics.
 - CoreData: CoreData framework is used for data persistence, allowing the app to save and load game progress.
 
-## README IMAGES
-You can see some photos from the game in the READMEIMAGES folder.
+## READMEMEDIA
+You can see some photos from the game in the READMEMEDIA folder.
 
 ## Contact
 For any inquiries or feedback, please contact [Ahmet Salih Kocatürk] at [kocaturksalih8@gmail.com].
