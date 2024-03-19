@@ -85,6 +85,4 @@ class RankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
    
-  
-
 }

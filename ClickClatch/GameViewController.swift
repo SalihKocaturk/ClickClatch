@@ -94,7 +94,7 @@ class GameViewController: UIViewController {
     func changeallpics(){
         let firestoredb = Firestore.firestore()
         firestoredb.collection("uploadedPhoto").addSnapshotListener { snapshot, error in
-            if error != nil{
+            if error != nil{//getting uploaded photo
                 self.makealert(titleInput: "error", messageInput: error?.localizedDescription ?? "error")
                 
             }else{
