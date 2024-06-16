@@ -1,4 +1,8 @@
 # ClickClatch
+## SCREENSHOTS FROM APP 
+![image](https://github.com/SalihKocaturk/ClickClatch/assets/139994163/f77af084-1135-4dde-a70f-bd0917e92e54)
+![image](https://github.com/SalihKocaturk/ClickClatch/assets/139994163/f3d2f810-f7d5-4e50-ab86-cd4b9511d689)
+
 
 ## Description
 This project is a game where you try to click on an image that you upload. The image disappears and then reappears in different places as you try to catch and click it, similar to the famous CatchKenny project, with added features.
